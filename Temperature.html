@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+  let Temperature = function (celius) {
+      this.celius = celius
+      this.calculatorTemperatureToF = function () {
+          return (this.celius * 9 / 5) + 32
+      }
+      this.calculatorTemperatureToK = function () {
+          return (this.celius + 273.15)
+      }
+  }
+    let calculator = new Temperature(25)
+  alert ("F is a:" + calculator.calculatorTemperatureToF())
+  alert ("K is a:" + calculator.calculatorTemperatureToK())
+</script>
+</body>
+</html>

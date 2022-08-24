@@ -5,24 +5,7 @@
     <title>Rectangle</title>
 </head>
 <body>
-<script>
-    let weight = +prompt("Enter number")
-    let height = +prompt("Enter number")
-    let Rectangle = function (weight,height) {
-      this.weight = weight;
-      this.height = height;
-
-      this.getArea = function() {
-        return this.weight * this.height;
-      }
-      this.getPerimeter = function() {
-        return (this.weight + this.height) * 2;
-      }
-    }
-    let rectangle = new Rectangle(weight,height)
-  alert(rectangle.getArea())
-  alert(rectangle.getPerimeter())
-
-</script>
+<canvas id="drawRectangle" width="300" height="300" ></canvas>
+<script src="js/classRectangle.js"></script>
 </body>
 </html>
